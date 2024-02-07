@@ -1,98 +1,98 @@
-[](#welcome)**Welcome**,
+[](#bienvenida)**Bienvenidos**,
 ========================
 
-This wiki is where we will learn how to edit the background moving theme and use your own images. It will be a fun and informative experience, especially if you are bored of the same old themes. At least i hope. 😀
+Este wiki es donde aprenderemos cómo editar el tema de fondo en movimiento y usar tus propias imágenes. Será una experiencia divertida e informativa, especialmente si estás aburrido de los mismos temas de siempre. Al menos eso espero. 😀
 
-[](#what-you-will-learn)What You Will Learn:
+[](#lo-que-aprenderas)Lo Que Aprenderás:
 --------------------------------------------
 
-In this tutorial, you will learn how to take a pattern image with a 1:1 scale, which can fully and seamlessly duplicate and create a giant wallpaper. You will then zoom in to a corner and move to the opposite corner before returning to the original position. The back and forth movement will continue until the frame limit is reached, which is 64000 frames (7.5~ minutes).
+En este tutorial, aprenderás cómo tomar una imagen de patrón con una escala de 1:1, que puede duplicarse completamente y crear un fondo de pantalla gigante. Luego, harás zoom en una esquina y te moverás a la esquina opuesta antes de regresar a la posición original. El movimiento de ida y vuelta continuará hasta alcanzar el límite de fotogramas, que es de 64000 fotogramas (alrededor de 7.5 minutos).
 
-[](#what-is-a-animated-background-theme)What is a animated background theme?
+[](#que-es-un-tema-de-fondo-animado)¿Qué es un tema de fondo animado?
 ----------------------------------------------------------------------------
 
-First, let's talk about the basics of creating a moving background theme. A moving background theme is essentially a image file that is looped continuously in the background of your Nintendo Switch home menu. The image is usually made up of a repeating pattern or image that is scaled and moved to create a sense of motion.
+Primero, hablemos sobre los conceptos básicos de crear un tema de fondo en movimiento. Un tema de fondo en movimiento es esencialmente un archivo de imagen que se repite continuamente en el fondo del menú de inicio de tu Nintendo Switch. La imagen generalmente está compuesta por un patrón o imagen que se repite y escala para crear una sensación de movimiento.
 
-[](#requirements)Requirements:
+[](#requisitos)Requisitos:
 ------------------------------
 
-To create your own moving background theme, you'll need a few things:
+Para crear tu propio tema de fondo en movimiento, necesitarás algunas cosas:
 
-1.  A pattern or image that can be seamlessly repeated and scaled.
-2.  An editing software that allows you to edit images.
+1.  Un patrón o imagen que pueda repetirse y escalarse sin problemas.
+2.  Un software de edición que te permita editar imágenes.
 3.  [Switch Theme Injector](https://github.com/exelix11/SwitchThemeInjector)
-4.  Knowledge on how to edit a JSON.
+4.  Conocimiento sobre cómo editar un JSON.
 
-[](#example)Example:
+[](#ejemplo)Ejemplo:
 ====================
 
-Let's start with the first step, which is finding a pattern or image that can be seamlessly repeated and scaled. One easy way to do this is to use a program like Adobe Photoshop or GIMP to create a repeating pattern. In this example i will use Photoshop. If you go to Pattern Preview you can basically check what you will get. ![1](https://user-images.githubusercontent.com/93286561/222496034-8ad8d9f6-cbec-4dd3-99ff-18c770157341.jpg) ![2](https://user-images.githubusercontent.com/93286561/222496353-e69c804c-39a6-465c-95f5-bf308e841b18.jpg)
+Comencemos con el primer paso, que es encontrar un patrón o imagen que pueda repetirse y escalarse sin problemas. Una forma fácil de hacer esto es usar un programa como Adobe Photoshop o GIMP para crear un patrón repetitivo. En este ejemplo usaré Photoshop. Si vas a Vista previa de patrones, básicamente puedes verificar lo que obtendrás. ![1](https://user-images.githubusercontent.com/93286561/222496034-8ad8d9f6-cbec-4dd3-99ff-18c770157341.jpg) ![2](https://user-images.githubusercontent.com/93286561/222496353-e69c804c-39a6-465c-95f5-bf308e841b18.jpg)
 
-After that, you'll need to resize the image with the size of 1280x720 which is necessary since the nxtheme requires an image that is 1280x720. The image will be deformed, but that is okay. In the animation, we can change the scale of the X position, giving it a 1:1 aspect ratio again.
+Después de eso, deberás redimensionar la imagen al tamaño de 1280x720, lo cual es necesario ya que el nxtheme requiere una imagen que sea 1280x720. La imagen se deformará, pero está bien. En la animación, podemos cambiar la escala de la posición X, dándole nuevamente una relación de aspecto 1:1.
 
 ![3](https://user-images.githubusercontent.com/93286561/222497174-49542687-a230-417d-a4bc-d44139292d78.jpg)
 
-Once you have your pattern, you'll need to export it as JPG, dont export it as PNG because we dont want transparency.
+Una vez que tengas tu patrón, deberás exportarlo como JPG, no lo exportes como PNG porque no queremos transparencia.
 
-After that, you can use this JSONs template that I use on my theme Patterns.
+Después de eso, puedes usar esta plantilla JSON que utilizo en mi tema Patterns.
 
-[Patterns. JSONs Vertical & 1x1](https://github.com/zzzribas/Patterns/tree/main/JSON%20TEMPLATE%20FOR%20ANIMATION)
+[Patterns. JSONs Vertical & 1x1](https://github.com/ElGatoFiestero/PatternsTraducido/tree/main/JSON%20TEMPLATE%20FOR%20ANIMATION)
 
-If you want to use your own JSON theme, you need to change the blyt/BgNml.bflyt pane in the main menu JSON to the one bellow:
+Si deseas utilizar tu propio tema JSON, debes cambiar el panel blyt/BgNml.bflyt en el JSON del menú principal por el siguiente:
 
 `{ "FileName": "blyt/BgNml.bflyt", "Patches": [ { "PaneName": "P_Bg_00", "Position": { "X": 5000.0, "Y": 60000.0 } } ], "AddGroups": [ { "GroupName": "G_ZBG", "Panes": [ "exelixBG" ] } ], "Materials": [ { "MaterialName": "P_Custm", "Refs": [ { "Name": "White1x1A128^s", "WrapS": 5, "WrapT": 5 }, ], "Transforms": [ { "Name": "White1x1A128^s", "ScaleX": 10, "ScaleY": 10 } ] } ] }`
 
 ![4](https://user-images.githubusercontent.com/93286561/222501806-a8d6af91-1a4b-453f-bec6-405b9b89b4bf.jpg)
 
-**Change to:**
+**Cambia a:**
 
 ![5](https://user-images.githubusercontent.com/93286561/222501842-1bb1c548-400b-40d2-8960-e2c86fc292df.jpg)
 
-This code tells how the Background will behave in the menu.
+Este código indica cómo se comportará el fondo en el menú.
 
-*   The position, as I said before, since we are zoomed, needs to be in the corner.
-*   The wrapT and wrapS to 5 mean that the image will duplicate and create a pattern.
-*   The scale is the number of repetitions the pattern will make. The bigger the number, the smaller the bg will be.
+*   La posición, como dije antes, ya que estamos ampliados, debe estar en la esquina.
+*   El wrapT y wrapS a 5 significa que la imagen se duplicará y creará un patrón.
+*   La escala es el número de repeticiones que hará el patrón. Cuanto mayor sea el número, más pequeño será el fondo.
 
-Only do this **AFTER ALL YOUR EDITS ARE DONE IN THE SWITCH LAYOUT EDITOR**, the Switch theme injector isn't ready for moving themes and will replace this pane with the default Diff. So it's really important to change the blyt/BgNml.bflyt after you DIFF and are ready to.
+Haz esto **SÓLO DESPUÉS DE QUE TODAS TUS EDICIONES ESTÉN HECHAS EN EL EDITOR DE TEMAS DE SWITCH**, el Switch theme injector no está listo para temas en movimiento y reemplazará este panel con el Diff predeterminado. Por lo tanto, es realmente importante cambiar el blyt/BgNml.bflyt después de que hagas el DIFF y estés listo.
 
-Next, animations. If you use my JSON the animation is already set, but let me explain what everything does. This BLFAN RdtBase\_Enter.BFLAN is main BLFAN for the animated background, is the one that the Switch calls when entering the first time into menu.
+A continuación, las animaciones. Si usas mi JSON, la animación ya está configurada, pero permíteme explicar qué hace todo. Este BLFAN RdtBase\_Enter.BFLAN es el BLFAN principal para el fondo animado, es el que llama el Switch al entrar por primera vez en el menú.
 
-For this tutorial lets ignore everthing else besides these 4 entrys in the FLPA. We are using the Switch Layout Theme Editor. The first entry corresponds to the X position of the wallpaper. Its animationTarget 0.
+Para este tutorial, ignoremos todo lo demás excepto estas 4 entradas en el FLPA. Estamos usando el Switch Layout Theme Editor. La primera entrada corresponde a la posición X del fondo de pantalla. Su animationTarget es 0.
 
 ![6](https://user-images.githubusercontent.com/93286561/222505972-a3559480-524a-4dfc-8187-9c0df5720927.jpg)
 
-As you can see we are moving the X value from -1800 to 1800 back and foward, that means the image is going from one coordinate to another every 8000 frames.
+Como puedes ver, estamos moviendo el valor X desde -1800 hasta 1800 hacia adelante y hacia atrás, lo que significa que la imagen va de una coordenada a otra cada 8000 frames.
 
-The same for the Y Value. Its animationTarget 1.
+Lo mismo para el Valor Y. Su animationTarget es 1.
 
 ![7](https://user-images.githubusercontent.com/93286561/222506868-9285aa8d-be8b-4cf3-ab22-8ccaf9f186e5.jpg)
 
-Next two are Scale of X and Y of the image. Here is where we can change the image from 1280x720 to 720x720, this value must stay the same for best results.
+Los siguientes dos son la Escala de X e Y de la imagen. Aquí es donde podemos cambiar la imagen de 1280x720 a 720x720, este valor debe permanecer igual para obtener los mejores resultados.
 
 ![8](https://user-images.githubusercontent.com/93286561/222507258-fa7c05da-04d3-4e75-8fc9-ce5652daee85.jpg)
 
 ![9](https://user-images.githubusercontent.com/93286561/222507268-2e710866-555f-4a7c-91c1-f0c32096d186.jpg)
 
-Now, we need to replicate all of this to all these BFLANS:
+Ahora, necesitamos replicar todo esto en todos estos BFLANS:
 
-*   RdtBase\_GameOut.bflan
-*   RdtBase\_GameOutHideCnt.bflan
-*   RdtBase\_StarterEnter.bflan
-*   RdtBase\_Enter.bflan
-*   RdtBase\_SystemAppletOut.bflan
+- RdtBase_GameOut.bflan
+- RdtBase_GameOutHideCnt.bflan
+- RdtBase_StarterEnter.bflan
+- RdtBase_Enter.bflan
+- RdtBase_SystemAppletOut.bflan
 
-**If all this is a bit confusing to you i recommend you to use my JSON and make small changes to these values from there instead of starting everything from the beginning.**
+**Si todo esto te parece un poco confuso, te recomiendo que uses mi JSON y hagas pequeños cambios en estos valores desde allí en lugar de empezar todo desde el principio.**
 
-That should be it. You'll need to use the Switch theme injector to create your new theme, using your image and the edited JSON.
+Eso debería ser todo. Necesitarás usar el inyector de temas de Switch para crear tu nuevo tema, usando tu imagen y el JSON editado.
 
-[](#final-thoughts)Final Thoughts
-=================================
+[](#final-thoughts)Pensamientos Finales
+=========================================
 
-By following these steps, you can create a fully customized moving background theme for your Nintendo Switch. It may take some time to get everything set up, but the end result is a unique and personalized theme that you can enjoy every time you use your Switch.
+Siguiendo estos pasos, puedes crear un tema de fondo en movimiento completamente personalizado para tu Nintendo Switch. Puede tomar algo de tiempo configurar todo, pero el resultado final es un tema único y personalizado que puedes disfrutar cada vez que uses tu Switch.
 
-That's all! If you have any questions, feel free to ask anytime. I hope this tutorial helped you create a moving theme for your Switch. Have fun and be creative!
+¡Eso es todo! Si tienes alguna pregunta, no dudes en preguntar en cualquier momento. Espero que este tutorial te haya ayudado a crear un tema en movimiento para tu Switch. ¡Diviértete y sé creativo!
 
-Result:
+Resultado:
 
 ![IMG_3654_1](https://user-images.githubusercontent.com/93286561/222519069-6857b0df-0938-4f78-9e85-5a111598056c.gif)
