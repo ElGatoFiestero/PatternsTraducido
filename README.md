@@ -1,42 +1,41 @@
 # Patterns
-A Nintendo Switch Theme.
+Un tema para Nintendo Switch.
 
-![](https://github.com/zzzribas/Patterns/blob/main/Vertical/github.gif)
+![Vista previa vertical](https://github.com/zzzribas/Patterns/blob/main/Vertical/github.gif)
 
-Hello again,
+Hola de nuevo,
 
-I am back in the scene and I have just created a new theme. Im really pround of this one.
-I have learned a lot about animations and put in a lot of trial and error to create this.
+Estoy de vuelta en la escena y acabo de crear un nuevo tema. Estoy realmente orgulloso de este. He aprendido mucho sobre animaciones y he puesto mucho ensayo y error para crear esto.
 
-I have made numerous edits to the esthetics, and added a lot of animations. I achieved this by using a pattern image that can be multiplied and by moving the pane up and down using a BLFAN.
+He realizado numerosas ediciones estéticas y añadido muchas animaciones. Logré esto utilizando una imagen de patrón que puede ser multiplicada y moviendo el panel hacia arriba y hacia abajo usando un BLFAN.
 
-Currently, this theme is only available for vertical icons. However, if there is demand, I can create a version for 1:1 icons as well.
+Actualmente, este tema solo está disponible para iconos verticales. Sin embargo, si hay demanda, puedo crear una versión para iconos 1:1 también.
 
-I would like to give a big BIG thanks to my friend Capybara (u/darkerthansvart) for all his help and for sharing his notes on animations and panes with me. His themes have inspired me to purchase another Switch just to experience his work and get back into theming.
+Me gustaría dar un gran GRAN agradecimiento a mi amigo Capybara (u/darkerthansvart) por toda su ayuda y por compartir sus notas sobre animaciones y paneles conmigo. Sus temas me han inspirado a comprar otro Switch solo para experimentar su trabajo y volver a tematizar.
 
-You can download the theme on Themezer:
+Puedes descargar el tema en Themezer:
 
-Vertical - https://themezer.net/packs/Patterns.-58f
+Vertical - [Patterns.-58f](https://themezer.net/packs/Patterns.-58f)
 
-Standard - https://themezer.net/packs/Patterns-1x1-Icons-59b
+Estándar - [Patterns-1x1-Icons-59b](https://themezer.net/packs/Patterns-1x1-Icons-59b)
 
-I will also be creating documentation on how to create your own moving themes on Github soon.
+También crearé documentación sobre cómo crear tus propios temas móviles en Github pronto.
 
--UPDATE-
-Now also for 1x1 Standard Nintendo Icons.
-![](https://github.com/zzzribas/Patterns/blob/main/1x1/github1x1.gif)
+- ACTUALIZACIÓN -
+Ahora también disponible para iconos estándar 1x1 de Nintendo.
+![Vista previa 1x1](https://github.com/zzzribas/Patterns/blob/main/1x1/github1x1.gif)
 
-# BUGS:
+# ERRORES:
 
-There are currently a few known bugs that I am aware of, and I would appreciate it if you could share any bugs you come across so I can fix them.
+Actualmente hay algunos errores conocidos que tengo en cuenta, y agradecería que compartieras cualquier error que encuentres para que pueda solucionarlo.
 
-The main menu animation is not fully animated and will stop after 64000 frames (around 8 minutes) unless you enter the settings, all apps, my page, or lock/unlock the Switch. Although there may be a way to loop it, the entrance sound will play every time it loops, which is annoying.
+La animación del menú principal no está completamente animada y se detendrá después de 64000 cuadros (alrededor de 8 minutos) a menos que entres en los ajustes, todas las aplicaciones, mi página, o bloquees/desbloquees el Switch. Aunque puede haber una forma de hacer un bucle, el sonido de entrada se reproducirá cada vez que se repita, lo cual es molesto.
 
-The background animation is only applied to the main menu. I tried very hard to find a way to apply it elsewhere, but it may be due to my lack of knowledge.
+La animación de fondo solo se aplica al menú principal. Intenté muy duro encontrar una manera de aplicarla en otros lugares, pero puede deberse a mi falta de conocimiento.
 
-If you press the '+' button on a game in the main menu, the animation will stop because it calls an unknown szs (I couldn't find it, at least).
+Si presionas el botón '+' en un juego en el menú principal, la animación se detendrá porque llama a un szs desconocido (al menos no pude encontrarlo).
 
-I hope you enjoy my new theme, Patterns!"
- 
-Background artwork is by J3Concepts
+¡Espero que disfrutes mi nuevo tema, Patterns!"
+
+La obra de arte de fondo es de J3Concepts
 https://www.behance.net/j3concepts
